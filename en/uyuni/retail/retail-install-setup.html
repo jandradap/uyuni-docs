@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Set Up the Uyuni for Retail Environment :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/retail/retail-install-setup.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/retail/retail-install-setup.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1823,7 +1820,7 @@
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/retail/pages/retail-install-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/retail/pages/retail-install-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1877,7 +1874,7 @@ You will need to synchronize the images, and can skip setting up the services on
 <h2 id="_prepare_and_build_terminal_images"><a class="anchor" href="#_prepare_and_build_terminal_images"></a><a class="link" href="#_prepare_and_build_terminal_images">1. Prepare and Build Terminal Images</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For information about Uyuni image building, see <a href="../administration/image-management.html" class="page">administration:image-management.adoc</a>.</p>
+<p>For information about Uyuni image building, see <a href="../administration/image-management.html" class="page">Image Building and Management</a>.</p>
 </div>
 <div class="paragraph">
 <p>Uyuni for Retail POS images are images specifically tailored for Uyuni for Retail environment and designed to be deployed using PXE booting mechanism.</p>
@@ -1960,7 +1957,7 @@ You will need to clone the repository locally to use it for building.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Before you configure the branch server, ensure you have decided on networking topology, and know the minion ID of the branch server.
-For the information about the possible network topologies, see <a href="retail-network-arch.html" class="page">retail:retail-network-arch.adoc</a>.</p>
+For the information about the possible network topologies, see <a href="retail-network-arch.html" class="page">Network Architecture</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1971,7 +1968,7 @@ For the information about the possible network topologies, see <a href="retail-n
 <td class="content">
 <div class="paragraph">
 <p>In case you plan to use the branch server as a monitoring server with Prometheus, be aware that Prometheus demands additional hardware resources.
-For more information about installing Prometheus, see <a href="../administration/monitoring.html" class="page">administration:monitoring.adoc</a>.</p>
+For more information about installing Prometheus, see <a href="../administration/monitoring.html" class="page">Monitoring with Prometheus and Grafana</a>.</p>
 </div>
 </td>
 </tr>
@@ -1986,7 +1983,7 @@ For more information about installing Prometheus, see <a href="../administration
 <td class="content">
 <div class="paragraph">
 <p>In case you plan to use the branch server with Ansible software, be aware that Ansible demands additional hardware resources.
-For more information about installing Ansible, see <a href="../administration/ansible-integration.html" class="page">administration:ansible-integration.adoc</a>.</p>
+For more information about installing Ansible, see <a href="../administration/ansible-integration.html" class="page">Ansible integration</a>.</p>
 </div>
 </td>
 </tr>
@@ -2014,7 +2011,7 @@ However, there are multiple ways to configure these services:</p>
 <div class="paragraph">
 <p>The branch server can be configured automatically using the <code class="command">retail_branch_init</code> command, as shown in this section.
 If you prefer to manually configure the branch server, you can do so using formulas.
-For more information about formulas, see <a href="retail-formulas-intro.html" class="page">retail:retail-formulas-intro.adoc</a>.</p>
+For more information about formulas, see <a href="retail-formulas-intro.html" class="page">Introduction to Retail Formulas</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure: Configuring Branch Server Formulas With a Helper Script</div>
@@ -2094,7 +2091,7 @@ You can do this through the Web UI, or by running this command:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>For more information about mass import tool, see <a href="retail-mass-config.html" class="page">retail:retail-mass-config.adoc</a>.</p>
+<p>For more information about mass import tool, see <a href="retail-mass-config.html" class="page">Mass Configuration</a>.</p>
 </div>
 </li>
 <li>
@@ -2148,7 +2145,7 @@ Manually create these system groups during installation:</p>
 </div>
 <div class="paragraph">
 <p>Additionally, you will need to create a system group for each branch server, and each terminal hardware type in your environment.
-For more information about hardware type groups, see <a href="retail-deploy-terminals.html" class="page">retail:retail-deploy-terminals.adoc</a>.</p>
+For more information about hardware type groups, see <a href="retail-deploy-terminals.html" class="page">Deploy Terminals</a>.</p>
 </div>
 <div class="paragraph">
 <p>Branch server groups are named after branch server prefixes, for example group name <code class="systemitem">B0001</code> for branch server prefix <code class="systemitem">BOO1</code>.</p>
@@ -2158,7 +2155,7 @@ For more information about hardware type groups, see <a href="retail-deploy-term
 Navigate to <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">System Groups</b></span> and click <b class="button">Create System Group</b>.</p>
 </div>
 <div class="paragraph">
-<p>For more information about system groups, see <a href="../reference/systems/system-groups.html" class="page">reference:systems/system-groups.adoc</a>.</p>
+<p>For more information about system groups, see <a href="../reference/systems/system-groups.html" class="page">System Groups</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2203,7 +2200,7 @@ You can do this with the Salt <code class="command">image-sync</code> state, par
 <div class="paragraph">
 <p>You can also set synchronization to run automatically on the branch server.
 Configure the image synchronization formula to apply the highstate regularly.
-For more information about <code class="systemitem">Image Synchronization Formula</code>, see <a href="../specialized-guides/salt/salt-formula-imagesync.html" class="page">specialized-guides:salt/salt-formula-imagesync.adoc</a>.</p>
+For more information about <code class="systemitem">Image Synchronization Formula</code>, see <a href="../specialized-guides/salt/salt-formula-imagesync.html" class="page">Image Synchronization Formula</a>.</p>
 </div>
 </div>
 </div>

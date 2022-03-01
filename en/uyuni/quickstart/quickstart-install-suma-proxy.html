@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quick Start SUMA Proxy :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/quickstart/quickstart-install-suma-proxy.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/quickstart/quickstart-install-suma-proxy.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1817,7 +1814,7 @@
 <span class="next-caret">
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/quickstart/pages/quickstart-install-suma-proxy.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/quickstart/pages/quickstart-install-suma-proxy.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1905,7 +1902,7 @@ OPTIONAL: In the following <code class="guimenu">Add On Product</code> screen, s
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Before you can select the correct child channels while creating the activation key, ensure you have completely downloaded the Uyuni Proxy 2022.02 channel and all the recommended and mandatory SUSE Linux Enterprise 15 SP4 channels.</p>
+<p>Before you can select the correct child channels while creating the activation key, ensure you have completely downloaded the Uyuni Proxy 2021.09 channel and all the recommended and mandatory SUSE Linux Enterprise 15 SP3 channels.</p>
 </div>
 </td>
 </tr>
@@ -1916,7 +1913,7 @@ OPTIONAL: In the following <code class="guimenu">Add On Product</code> screen, s
 <ol class="arabic">
 <li>
 <p>Create an activation key based on the <code class="systemitem">SLE-Product-SUSE-Manager-Proxy-4.2-Pool</code> base channel.
-For more information about activation keys, see <a href="../client-configuration/activation-keys.html" class="page">client-configuration:activation-keys.adoc</a>.</p>
+For more information about activation keys, see <a href="../client-configuration/activation-keys.html" class="page">Activation Keys</a>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="_images/proxy-key.png" alt="proxy key">
@@ -1960,7 +1957,7 @@ For more information about activation keys, see <a href="../client-configuration
 </li>
 <li>
 <p>To bootstrap a proxy, use the bootstrap script.
-For more information about bootstrap scripts, see <a href="../client-configuration/registration-bootstrap.html" class="page">client-configuration:registration-bootstrap.adoc</a>.</p>
+For more information about bootstrap scripts, see <a href="../client-configuration/registration-bootstrap.html" class="page">Register Clients with a Bootstrap Script</a>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="_images/proxy-bootstrap.png" alt="proxy bootstrap">
@@ -2032,7 +2029,7 @@ Otherwise, use the values specific for your environment.</p>
 </div>
 <div class="paragraph">
 <p>When the proxy configuration process is complete, you can continue with client registration.
-For more instructions, see <a href="../client-configuration/client-proxy.html" class="page">client-configuration:client-proxy.adoc</a>.</p>
+For more instructions, see <a href="../client-configuration/client-proxy.html" class="page">Register Clients to a Proxy</a>.</p>
 </div>
 </div>
 </div>

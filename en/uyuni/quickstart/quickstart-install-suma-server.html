@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quick Start SUMA Server :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/quickstart/quickstart-install-suma-server.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/quickstart/quickstart-install-suma-server.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1817,7 +1814,7 @@
 <span class="next-caret">
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/quickstart/pages/quickstart-install-suma-server.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/quickstart/pages/quickstart-install-suma-server.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1944,12 +1941,12 @@ Only use add-ons that you absolutely require, such as driver repositories from y
 <p>Enter an email address to receive status notifications and click <b class="button">Next</b> to continue.
 Uyuni can sometimes send a large volume of notification emails.
 You can disable email notifications in the Web UI after setup, if you need to.
-For more information on disabling email notifications, see <a href="../reference/users/user-details.html" class="page">reference:users/user-details.adoc</a>.</p>
+For more information on disabling email notifications, see <a href="../reference/users/user-details.html" class="page">User Details</a>.</p>
 </li>
 <li>
 <p>Enter your certificate information and a password.
 If you intend to use a custom SSL certificate, you need to have set this up first.
-For more information about SSL certificates, see <a href="../administration/ssl-certs.html" class="page">administration:ssl-certs.adoc</a>.</p>
+For more information about SSL certificates, see <a href="../administration/ssl-certs.html" class="page">SSL Certificates</a>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="_images/quickstart-mgr-setup4-ncurses.png" alt="quickstart mgr setup4 ncurses">
@@ -2097,7 +2094,7 @@ the clients can be bootstrapped following the steps This completes Uyuni install
 </div>
 <div class="paragraph">
 <p>When the channel synchronization process is complete, you can continue with client registration.
-For more instructions, see <a href="../client-configuration/registration-overview.html" class="page">client-configuration:registration-overview.adoc</a>.</p>
+For more instructions, see <a href="../client-configuration/registration-overview.html" class="page">Client Registration</a>.</p>
 </div>
 </div>
 </div>

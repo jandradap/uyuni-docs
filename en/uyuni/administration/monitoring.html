@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Monitoring with Prometheus and Grafana :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/administration/monitoring.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/administration/monitoring.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1822,7 +1819,7 @@
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/administration/pages/monitoring.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/administration/pages/monitoring.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -2011,7 +2008,7 @@ Make sure that the credentials you have entered allow access to the set of syste
 </ol>
 </div>
 <div class="paragraph">
-<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure: Manually Installing and Configuring Prometheus</div>
@@ -2136,7 +2133,7 @@ You can choose which dashboards to provision in the formula configuration page.<
 </table>
 </div>
 <div class="paragraph">
-<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure: Manually Installing Grafana</div>
@@ -2172,7 +2169,7 @@ In your browser, navigate to the URL of the server where Grafana is installed, o
 <p>For more information on how to manually install and configure Grafana, see <a href="https://grafana.com/docs" class="bare">https://grafana.com/docs</a>.</p>
 </div>
 <div class="paragraph">
-<p>For more information about the monitoring formulas with forms, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about the monitoring formulas with forms, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 </div>
 </div>
@@ -2351,7 +2348,7 @@ The <code class="guimenu">Address</code> field accepts either a port number prec
 </table>
 </div>
 <div class="paragraph">
-<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 </div>
 </div>
@@ -2431,7 +2428,7 @@ For example, <code>9999</code>.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about the monitoring formulas, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 </div>
 </div>
@@ -2455,7 +2452,7 @@ Uyuni offers enabling the following security model:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>For more information about configuring all available options, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">specialized-guides:salt/salt-formula-monitoring.adoc</a>.</p>
+<p>For more information about configuring all available options, see <a href="../specialized-guides/salt/salt-formula-monitoring.html" class="page">Monitoring Formula</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="_generating_tls_certificates"><a class="anchor" href="#_generating_tls_certificates"></a><a class="link" href="#_generating_tls_certificates">5.1. Generating TLS certificates</a></h3>

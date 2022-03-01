@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Install with the Unified Installer :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/retail/retail-install-unified.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/retail/retail-install-unified.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1817,7 +1814,7 @@
 <span class="next-caret">
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/retail/pages/retail-install-unified.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/retail/pages/retail-install-unified.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1952,7 +1949,7 @@ Take note of the passwords you set, you will need them later on.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Continue with general Uyuni configuration and channel synchronization at <a href="../installation-and-upgrade/server-setup.html" class="page">installation-and-upgrade:server-setup.adoc</a>.</p>
+<p>Continue with general Uyuni configuration and channel synchronization at <a href="../installation-and-upgrade/server-setup.html" class="page">SUSE Manager Server Setup</a>.</p>
 </div>
 </div>
 </div>
@@ -2046,7 +2043,7 @@ For Branch Server, the expected modules are:</p>
 <ol class="arabic">
 <li>
 <p>Create an activation key based on the <code class="systemitem">SLE-Product-SUSE-Manager-Retail-Branch-Server-4.2-Pool</code> base channel.
-For more information about activation keys, see <a href="../client-configuration/activation-keys.html" class="page">client-configuration:activation-keys.adoc</a>.</p>
+For more information about activation keys, see <a href="../client-configuration/activation-keys.html" class="page">Activation Keys</a>.</p>
 </li>
 <li>
 <p>In the <code class="guimenu">Child Channels</code> listing, select the recommended channels by clicking the <code>include recommended</code> icon:</p>
@@ -2071,11 +2068,11 @@ For more information about activation keys, see <a href="../client-configuration
 </div>
 </li>
 <li>
-<p>Use this activation key in Uyuni Proxy registration at <a href="../installation-and-upgrade/proxy-registration.html" class="page">installation-and-upgrade:proxy-registration.adoc</a>.</p>
+<p>Use this activation key in Uyuni Proxy registration at <a href="../installation-and-upgrade/proxy-registration.html" class="page">SUSE Manager Proxy Registration</a>.</p>
 </li>
 <li>
 <p>Configure Uyuni Proxy.
-For more information on how to do this, see <a href="../installation-and-upgrade/proxy-setup.html" class="page">installation-and-upgrade:proxy-setup.adoc</a>.</p>
+For more information on how to do this, see <a href="../installation-and-upgrade/proxy-setup.html" class="page">SUSE Manager Proxy Setup</a>.</p>
 </li>
 </ol>
 </div>
@@ -2115,7 +2112,7 @@ Do not configure the <code class="package">susemanager-tftpsync-recv</code> tool
 <div class="sectionbody">
 <div class="paragraph">
 <p>Build hosts are regular SUSE Linux Enterprise Server installations registered to Uyuni as Salt clients.
-For more information on how to install and register Salt clients to Uyuni, see <a href="../client-configuration/registration-overview.html" class="page">client-configuration:registration-overview.adoc</a>.</p>
+For more information on how to install and register Salt clients to Uyuni, see <a href="../client-configuration/registration-overview.html" class="page">Client Registration</a>.</p>
 </div>
 <div class="paragraph">
 <p>To prepare a build host from an already registered Salt client, see <a href="../administration/image-management.html#at.images.kiwi.buildhost" class="page">administration:image-management.adoc#at.images.kiwi.buildhost</a>.</p>

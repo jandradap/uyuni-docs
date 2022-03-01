@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Uyuni Documentation :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/index.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/index.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1815,9 +1812,11 @@
     <span class="prev-caret">
 &nbsp;
 <span class="next-caret">
+      <a href="common_gfdl1.2_i.html">
+        <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/ROOT/pages/index.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/ROOT/pages/index.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1862,10 +1861,10 @@ Additionally, you can interact with Uyuni using the XML-RPC API.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>For more information about <code class="command">spacecmd</code>, see <a href="reference/spacecmd-intro.html" class="page">reference:spacecmd-intro.adoc</a>.</p>
+<p>For more information about <code class="command">spacecmd</code>, see <a href="reference/spacecmd-intro.html" class="page">spacecmd Reference</a>.</p>
 </li>
 <li>
-<p>For more information about other command line tools, see <a href="reference/command-line-tools.html" class="page">reference:command-line-tools.adoc</a>.</p>
+<p>For more information about other command line tools, see <a href="reference/command-line-tools.html" class="page">Command Line Tools</a>.</p>
 </li>
 <li>
 <p>For more information about the API, see <a href="https://www.uyuni-project.org/uyuni-docs-api/uyuni/index.html" class="bare">https://www.uyuni-project.org/uyuni-docs-api/uyuni/index.html</a>.</p>
@@ -1885,7 +1884,7 @@ Additionally, you can interact with Uyuni using the XML-RPC API.</p>
 <h2 id="_available_documentation"><a class="anchor" href="#_available_documentation"></a><a class="link" href="#_available_documentation">2. Available Documentation</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following documentation is available for Uyuni version 2022.02.</p>
+<p>The following documentation is available for Uyuni version 2021.09.</p>
 </div>
 <div class="paragraph">
 <p>Download All PDFs <span class="icon"><i class="fa fa-caret-right"></i></span> <span class="icon"><a class="image" href="../uyuni-docs_en-pdf.zip"><i class="fa fa-file-archive"></i></a></span></p>
@@ -1939,6 +1938,16 @@ Additionally, you can interact with Uyuni using the XML-RPC API.</p>
 
   </div>
 
+  <div class="next">
+      <a href="common_gfdl1.2_i.html" title="License">
+        <div class="change-page">
+          <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
+        <span class="label">Next</span>
+        <br/>
+       <!-- <span class="label title"><strong>:</strong></span> -->
+        <span class="title">License</span>
+        </div>
+      </a>
   </div>
 </div>
 </article>

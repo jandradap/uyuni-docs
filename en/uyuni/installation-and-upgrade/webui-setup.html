@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Web Interface Setup :: Uyuni Documentation</title>
-    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/en/uyuni/installation-and-upgrade/webui-setup.html">
-    <meta name="generator" content="Antora 2.2.0">
+    <link rel="canonical" href="https://www.uyuni-project.org/uyuni-docs/uyuni/installation-and-upgrade/webui-setup.html">
+    <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -25,7 +25,7 @@
                         class="logo" src="../../_/img/uyuni_logo.png"/></a>
                 <!-- <a href="https://opensource.suse.com/doc-susemanager/index.html">Uyuni Project</a>
         <span class="separator">//</span>
-          <a href="https://www.uyuni-project.org/uyuni-docs/en">Documentation</a> -->
+          <a href="https://www.uyuni-project.org/uyuni-docs">Documentation</a> -->
             </div>
                 <div class="navbar-item">
                     <!-- <i class="fas fa-search"></i>&nbsp; -->
@@ -59,9 +59,6 @@
                         <!--  </div><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                         <a role="button" class="navbar-item" id="en" onclick="selectLanguage(this.id)"><img src="../../_/img/engFlag.svg" class="langIcon english">&nbsp;English</a>
                         <!-- LANGUAGESELECTOR -->
-                        <a role="button" class="navbar-item" id="ko" onclick="selectLanguage(this.id)"><img src="../../_/img/koFlag.svg" class="langIcon korea">&nbsp;한국어</a>
-                        <a role="button" class="navbar-item" id="ja" onclick="selectLanguage(this.id)"><img src="../../_/img/jaFlag.svg" class="langIcon japan">&nbsp;日本語</a>
-                        <a role="button" class="navbar-item" id="zh_CN" onclick="selectLanguage(this.id)"><img src="../../_/img/china.svg" class="langIcon china">&nbsp;中国人</a>
                     </div>
                 </div>
 
@@ -368,6 +365,9 @@
     <a class="nav-link" href="../client-configuration/clients-sle.html">SUSE Linux Enterprise Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-sleses.html">Expanded Support Clients</a>
   </li>
 </ul>
@@ -378,9 +378,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-opensuseleap.html">openSUSE Leap Clients</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../client-configuration/clients-slemicro.html">SLE Micro Clients</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../client-configuration/clients-microos.html">openSUSE MicroOS</a>
@@ -559,7 +556,7 @@
     <a class="nav-link" href="../client-configuration/autoinst-reinstall.html">Reinstall Registered Systems</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network</a>
+    <a class="nav-link" href="../client-configuration/autoinst-pxeboot.html">Install via the Network (PXE Boot)</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/autoinst-cdrom.html">Install via a CD-ROM or a USB Key</a>
@@ -1823,7 +1820,7 @@
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
     <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/uyuni-2022.02/translations/en/modules/installation-and-upgrade/pages/webui-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+  <a href="https://github.com/jandradap/uyuni-docs/edit/HEAD/modules/installation-and-upgrade/pages/webui-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1923,7 +1920,7 @@ Click <b class="button">Search</b> to go to the relevant <code class="guimenu">A
 <p>The systems selected icon displays the number of currently selected systems in a circle.
 Click the systems selected icon to go to <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">System Set Manager</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span>.
 Click the eraser icon to unselect all systems.
-For more information about the system set manager, see <a href="../client-configuration/system-set-manager.html" class="page">client-configuration:system-set-manager.adoc</a>.</p>
+For more information about the system set manager, see <a href="../client-configuration/system-set-manager.html" class="page">System Set Manager</a>.</p>
 </dd>
 <dt class="hdlist1">User Account</dt>
 <dd>
@@ -2039,30 +2036,55 @@ Click the column header again to reverse the sort.</p>
 <p>Patches are represented by three main icons, depending on the type of patch.
 Icons are coloured either green, yellow, or red, depending on the severity.</p>
 </div>
-<div class="paragraph">
-<p><span class="icon none"><i class="fa fa-shield-alt"></i></span>
-The shield icon is a security alert.
-A red shield is the highest priority security alert.</p>
-</div>
-<div class="paragraph">
-<p><span class="icon none"><i class="fa fa-bug"></i></span>
-The bug icon is a bug fix alert.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="_images/spacewalk-icon-enhancement.svg" alt="Enhancement Alert"></span>
-The squares icon is an enhancement alert.</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon none"><i class="fa fa-shield-alt"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The shield icon is a security alert.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A red shield is the highest priority security alert.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon none"><i class="fa fa-bug"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The bug icon is a bug fix alert.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="_images/spacewalk-icon-enhancement.svg" alt="Enhancement Alert"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The squares icon is an enhancement alert.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Some additional icons are used to give extra information:</p>
 </div>
-<div class="paragraph">
-<p><span class="icon none"><i class="fa fa-sync"></i></span>
-The circling arrows icon indicates that applying a patch will require a reboot.</p>
-</div>
-<div class="paragraph">
-<p><span class="icon none"><i class="fa fa-archive"></i></span>
-The archive box icon indicates that a patch will have an effect on package management.</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon none"><i class="fa fa-sync"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The circling arrows icon indicates that applying a patch will require a reboot.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon none"><i class="fa fa-archive"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The archive box icon indicates that a patch will have an effect on package management.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_interface_customization"><a class="anchor" href="#_interface_customization"></a><a class="link" href="#_interface_customization">1.5. Interface Customization</a></h3>
@@ -2073,7 +2095,7 @@ The SUSE Manager theme also has a dark option available.
 To change the theme using the Web UI, navigate to <span class="menuseq"><b class="menu">Home</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">My Preferences</b></span> and locate the <code class="guimenu">Style Theme</code> section.</p>
 </div>
 <div class="paragraph">
-<p>For information about changing the default theme, see <a href="../administration/users.html" class="page">administration:users.adoc</a>.</p>
+<p>For information about changing the default theme, see <a href="../administration/users.html" class="page">Users</a>.</p>
 </div>
 </div>
 <div class="sect2">
